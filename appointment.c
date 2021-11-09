@@ -358,6 +358,7 @@ void quit(Record app[], int num, char fileName[]) {
 	
 	printf("Please enter your choice (1 or 2) : ");
 	scanf("%d", &choice);		// give a choice to save or discard
+	getchar();
 	switch(choice) {
 		case 1:
 			fp = fopen(fileName, "w");
